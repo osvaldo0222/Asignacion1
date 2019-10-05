@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-    <link rel="stylesheet" href="css.css">
-  </head>
-  <body>
+<html>
+<head>
+<title>asignacion #1</title>
 
-  <form action="/autenticar" method="post">
-    <div class="imgcontainer">
-      <img src="https://pages.theascent.com/hubfs/add%20authorized%20user.jpg" alt="Avatar" class="avatar">
-    </div>
-
-    <div class="container">
-      <label for="usuario"><b>Nombre</b></label>
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active"> asignacion #1 </h2>
+      
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="https://img.icons8.com/bubbles/100/000000/user.png" id="" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form action="/autenticar" method="post">
+        <label for="usuario"><b>Nombre</b></label>
       <input type="text" placeholder="Nombre" name="usuario" id="usuario" required>
 
       <label for="password"><b>Contrasena</b></label>
-      <input type="password" placeholder="Contraseña" name="password" id="password" required>
-
-      <button type="submit">Entrar</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+      <input type="password" placeholder="password" name="password" id="password" required>
+      <input type="submit" class="fadeIn fourth" value="Log In">
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <span>Parcialmente tomado de </span><a class="underlineHover" href="#">www.reshdesignweb.com </a>
+      </div>
+  
     </div>
+  </div>
 
-    <div class="container" style="background-color:#f1f1f1"></div>
-  </form>
-  </body>
+</body>
 </html>
